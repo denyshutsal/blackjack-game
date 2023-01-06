@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-image: url('img/table-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: rgb(215, 163, 33);
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { color: rgb(215, 163, 33); }
+  25% { color: rgb(188, 162, 96); }
+  50% { color: rgb(250, 179, 0); }
+  75% { color: rgb(171, 154, 111); }
+  100% { color: rgb(229, 196, 115); }
+}
+
+.message-el {
+  font-size: 22px;
+  font-style: italic;
+  color: rgb(222, 184, 135);
+}
+
+.btn {
+  width: 150px;
+  color: rgb(157 67 67);
+  background: rgb(218, 165, 32);
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  cursor: pointer;
+}
