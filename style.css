@@ -9,6 +9,10 @@ body, html {
 
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
   font-weight: 800;
   color: rgb(255, 255, 255);
@@ -23,6 +27,15 @@ body {
   font-size: 50px;
   text-transform: uppercase;
   color: rgb(215, 163, 33);
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { color: rgb(215, 163, 33); }
+  25% { color: rgb(188, 162, 96); }
+  50% { color: rgb(250, 179, 0); }
+  75% { color: rgb(171, 154, 111); }
+  100% { color: rgb(229, 196, 115); }
 }
 
 .message-el {
